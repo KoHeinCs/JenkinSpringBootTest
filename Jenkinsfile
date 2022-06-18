@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                 bat "mvn -f pom.xml clean package"
+                 bat "mvn clean package"
             }
             post {
                 success {
